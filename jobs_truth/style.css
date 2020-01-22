@@ -1,0 +1,229 @@
+/*reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+    box-sizing: border-box;
+    background-color: #eee;
+}
+.login_area{
+    margin:10px;
+}
+.login_area > a{
+    border: black 0.5px solid;
+    background-color: indianred;
+    padding:10px;
+    margin: 5px 5px;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+    border-radius: 5px;
+}
+.login_area > a:hover{
+    text-decoration: underline;
+    background-color: gray;
+    color: whitesmoke;
+    border: 1px solid blueviolet;
+    font-weight: 700;
+}
+.title{
+    margin:10px 0px;
+    min-width:500px;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+.container{
+    padding-top:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width:500px;
+    margin: 0 auto;
+}
+/* 文章form */
+/*變數命名*/:root{
+    --btn_color : rgb(202, 91, 91,0.9);
+    --border_color: rgba(0,0,0,0.5);
+}
+.readytopic{
+    padding: 10px 20px;
+    min-width:500px;
+}
+.readytopic div{
+    margin:10px;
+}
+.ready__title{
+    font-size: 18px;
+    margin: 10px 0px;
+    padding: 10px 0px;
+    letter-spacing: 1.5px;
+}
+.readytopic input , textarea{
+    border: 0.5px solid rgba(0,0,0,0.5);
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+.ready__good , .ready__bad{
+    display: inline-block;
+}
+.ready__btn input{
+    color:white;
+    border:0.5px solid whitesmoke;
+    background-color:var(--btn_color);
+    padding: 20px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+/* 文章 */
+.topic{
+    border: solid 0.5px var(--border_color);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    min-width:500px;
+}
+.topic__author, .topic__time, .topic__edit{
+    display: inline-block;
+    padding:5px;
+    margin: 10px 0px;
+    letter-spacing: 1.5px;
+}
+.topic__company, .topic__good, .topic__bad{
+    margin: 10px 0px;
+    letter-spacing: 1.5px;
+}
+.topic__edit{
+    color:red;
+    text-decoration: underline red;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+.topic__edit:hover{
+    background-color: rgb(163, 161, 161);
+    color:whitesmoke;
+}
+/* 留言內容 */
+.msgs__all{
+    margin-top: 20px;
+    min-width:450px;
+}
+.msg__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 5px 30px;
+    padding: 10px 5px;
+    border:dashed 0.3px rgba(0,0,0,0.5);
+    font-size: 10px;
+}
+.msg__container div{
+    color:rgba(0,0,0,0.5);
+    letter-spacing: 1px;
+}
+.msg__time{
+    font-size: 8px;
+}
+.msg__time div,.msg__time a{
+    display: inline-block;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 10px;
+    text-decoration: none;
+    color:black;
+    transition: ease-in 0.2s all;
+    color:rgba(0,0,0,0.5);
+}
+.msg__delete > a:hover , .msg__edit:hover{
+    text-decoration: underline;
+    background-color: #888;
+    color: whitesmoke;
+}
+
+/* 留言form */
+.msg__form-all > input{
+    color:white;
+    border:0.5px solid whitesmoke;
+    border-radius: 10%;
+    background-color: rgb(202, 91, 91);
+    padding: 15px 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+.msg__form{
+    border: solid 0.3px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 50px;
+    margin: 0 auto;
+    width: 400px;
+}
+.msg__form-info{
+    border-bottom: solid 1px rgba(0,0,0,0.5);
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    min-width: 400px;
+}
+.msg__form-author , .msg__form-time{
+    display: inline-block;
+}
+.msg__form-author > input{
+    border: none;
+}
+.msg__form-content > textarea{
+    border-radius: 10px;
+}
+.msg__form-submit > input{
+    color:white;
+    border:0.5px solid whitesmoke;
+    background-color: var(--btn_color);
+    padding: 10px 50px;
+    border-radius: 5px;
+    margin: 10px 0px;
+}
+.hidden{
+    display: none;
+}

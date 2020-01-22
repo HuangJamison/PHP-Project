@@ -1,0 +1,6 @@
+{
+    "require": {
+        "vlucas/phpdotenv": "^4.1",
+        "symfony/dotenv": "^5.0"
+    }
+}
